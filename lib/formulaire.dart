@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/authentifier.dart';
 
 class Formulaire extends StatelessWidget {
   const Formulaire({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class Formulaire extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all( 15.0),
 
-child: Column(
+child: ListView(
   children: [
     Image.asset("assets/dmc5.jpg",width: 400,),
 Padding(
@@ -86,7 +87,10 @@ Padding(
       style: ElevatedButton.styleFrom(
         primary: Colors.blue,
       ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Auth())
+        );
+      },
     ),
     SizedBox(
       width: 40.0,
@@ -98,7 +102,9 @@ Padding(
       style: ElevatedButton.styleFrom(
         primary: Colors.blue,
       ),
-      onPressed: () {},
+      onPressed: () {
+
+      },
     ),
   ],
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/details.dart';
 import 'package:myapp/formulaire.dart';
 import 'package:myapp/home_screen.dart';
+import 'package:myapp/movie_panier.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const Formulaire());
+      home: const Panier());
   }
 }
 
